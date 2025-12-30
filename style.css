@@ -685,4 +685,22 @@ img {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+/* ===== Social Media Icons ===== */
+a img {
+    width: 40px;   
+    height: 40px;  
+    object-fit: contain; 
+    transition: transform 0.3s; 
+}
+
+a img:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    a img {
+        width: 30px;
+        height: 30px;
+    }
+}
 
