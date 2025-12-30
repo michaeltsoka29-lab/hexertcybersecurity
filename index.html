@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hexert - Advanced Cybersecurity Solutions. Protecting your digital assets with cutting-edge security technologies.">
+    <meta name="keywords" content="cybersecurity, security, penetration testing, threat detection, Hexert">
+    <title>Hexert | Advanced Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="hex-loader">
+            <div class="hex"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 2L46 14V38L25 50L4 38V14L25 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M25 10L38 18V34L25 42L12 34V18L25 10Z" fill="currentColor" opacity="0.3"/>
+                    <path d="M25 18L31 22V30L25 34L19 30V22L25 18Z" fill="currentColor"/>
+                </svg>
+                <span>HEXERT</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Get Protected</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="cyber-grid"></div>
+            <div class="floating-elements">
+                <div class="hex-float hex-1"></div>
+                <div class="hex-float hex-2"></div>
+                <div class="hex-float hex-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse"></span>
+                <span>Trusted by 500+ Companies Worldwide</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Fortify</span> Your Digital
+                <br>Infrastructure
+            </h1>
+            <p class="hero-description">
+                Hexert delivers enterprise-grade cybersecurity solutions that protect your 
+                organization from evolving threats. Advanced AI-powered defense systems 
+                working 24/7 to keep your data secure.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary btn-lg">
+                    <span>Explore Services</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary btn-lg">
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5,3 19,12 5,21"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99.9">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Threat Detection</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Clients Protected</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-suffix">/7</span>
+                    <span class="stat-label">Monitoring</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="shield-container">
+                <div class="shield-ring ring-1"></div>
+                <div class="shield-ring ring-2"></div>
+                <div class="shield-ring ring-3"></div>
+                <div class="shield-core">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5L90 25V55C90 75 70 95 50 95C30 95 10 75 10 55V25L50 5Z" 
+                              stroke="url(#shieldGradient)" stroke-width="2" fill="none"/>
+                        <path d="M50 20L75 32V52C75 65 62 80 50 80C38 80 25 65 25 52V32L50 20Z" 
+                              fill="url(#shieldGradient)" opacity="0.2"/>
+                        <path d="M45 50L35 40L30 45L45 60L70 35L65 30L45 50Z" 
+                              fill="url(#shieldGradient)"/>
+                        <defs>
+                            <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00ff88"/>
+                                <stop offset="100%" stop-color="#00ccff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Hexert</span>
+                <h2 class="section-title">Defending the <span class="gradient-text">Digital Frontier</span></h2>
+                <p class="section-description">
+                    Founded in 2018, Hexert has grown to become a leader in cybersecurity innovation, 
+                    protecting organizations across the globe.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="file-name">security_scan.py</span>
+                            </div>
+                            <pre class="code-content"><code><span class="keyword">import</span> hexert
+
+<span class="keyword">class</span> <span class="class-name">SecurityScanner</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.threats = []
+        self.status = <span class="string">"PROTECTED"</span>
+    
+    <span class="keyword">def</span> <span class="function">scan_network</span>(self):
+        <span class="comment"># AI-powered threat detection</span>
+        threats = hexert.detect_threats()
+        <span class="keyword">return</span> self.<span class="function">neutralize</span>(threats)
+    
+    <span class="keyword">def</span> <span class="function">neutralize</span>(self, threats):
+        <span class="keyword">for</span> threat <span class="keyword">in</span> threats:
+            hexert.block(threat)
+        <span class="keyword">return</span> <span class="string">"✓ System Secure"</span>
+
+<span class="comment"># Initialize protection</span>
+scanner = SecurityScanner()
+scanner.scan_network()</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Our Mission</h3>
+                            <p>To provide uncompromising security solutions that enable businesses to operate 
+                            with confidence in an increasingly connected world.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>24/7 Operations</h3>
+                            <p>Our Security Operations Center never sleeps. We monitor, detect, and respond 
+                            to threats around the clock.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Expert Team</h3>
+                            <p>Our team comprises certified security professionals with backgrounds in 
+                            military, government, and private sector security.</p>
+                        </div>
+                    </div>
+
+                    <div class="certifications">
+                        <span class="cert-label">Certifications:</span>
+                        <div class="cert-badges">
+                            <span class="cert-badge">ISO 27001</span>
+                            <span class="cert-badge">SOC 2</span>
+                            <span class="cert-badge">GDPR</span>
+                            <span class="cert-badge">HIPAA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive <span class="gradient-text">Security Solutions</span></h2>
+                <p class="section-description">
+                    From threat detection to incident response, we offer end-to-end cybersecurity 
+                    services tailored to your organization's needs.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453L2 22l5.547-1.043A9.96 9.96 0 0012 22z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Penetration Testing</h3>
+                    <p class="service-description">
+                        Simulate real-world attacks to identify vulnerabilities before malicious actors do. 
+                        Our ethical hackers test your defenses rigorously.
+                    </p>
+                    <ul class="service-features">
+                        <li>Web Application Testing</li>
+                        <li>Network Penetration Testing</li>
+                        <li>Social Engineering Tests</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M12 8v4M12 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Managed Detection & Response</h3>
+                    <p class="service-description">
+                        24/7 monitoring and rapid response to threats. Our SOC team watches your 
+                        infrastructure so you can focus on your business.
+                    </p>
+                    <ul class="service-features">
+                        <li>Real-time Threat Monitoring</li>
+                        <li>Incident Response</li>
+                        <li>Threat Intelligence</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0110 0v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Security Consulting</h3>
+                    <p class="service-description">
+                        Strategic guidance to build and maintain a robust security posture. 
+                        We help you develop policies and procedures that work.
+                    </p>
+                    <ul class="service-features">
+                        <li>Risk Assessment</li>
+                        <li>Compliance Support</li>
+                        <li>Security Architecture</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Cloud Security</h3>
+                    <p class="service-description">
+                        Secure your cloud infrastructure across AWS, Azure, and GCP. 
+                        We ensure your cloud deployments meet the highest security standards.
+                    </p>
+                    <ul class="service-features">
+                        <li>Cloud Configuration Audit</li>
+                        <li>Identity & Access Management</li>
+                        <li>Data Protection</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <path d="M12 18v-6M9 15l3 3 3-3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Incident Response</h3>
+                    <p class="service-description">
+                        When a breach occurs, every minute counts. Our IR team responds 
+                        rapidly to contain threats and minimize damage.
+                    </p>
+                    <ul class="service-features">
+                        <li>24/7 Emergency Response</li>
+                        <li>Forensic Investigation</li>
+                        <li>Recovery Support</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Security Training</h3>
+                    <p class="service-description">
+                        Empower your team with security awareness training. 
+                        Human error is the #1 cause of breaches—we help prevent it.
+                    </p>
+                    <ul class="service-features">
+                        <li>Phishing Simulations</li>
+                        <li>Security Awareness Programs</li>
+                        <li>Executive Briefings</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text">
+                    <span class="section-tag">Why Hexert</span>
+                    <h2 class="section-title">Advanced Technology <span class="gradient-text">Meets Expertise</span></h2>
+                    <p class="section-description">
+                        Our proprietary security platform combines AI-driven threat detection with 
+                        human expertise to deliver unmatched protection.
+                    </p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="feature-info">
+                                <h4>AI-Powered Detection</h4>
+                                <p>Machine learning algorithms that evolve with emerging threats</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Zero-Day Protection</h4>
+                                <p>Behavioral analysis catches unknown threats before they strike</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Automated Response</h4>
+                                <p>Instant threat containment with minimal human intervention</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Unified Dashboard</h4>
+                                <p>Complete visibility into your security posture in one place</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-visual">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="dashboard-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="dashboard-title">Hexert Security Dashboard</span>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="dashboard-stat green">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-value">Protected</span>
+                                    <span class="stat-desc">System Status</span>
+                                </div>
+                            </div>
+                            
+                            <div class="dashboard-grid">
+                                <div class="mini-stat">
+                                    <span class="mini-value">2,847</span>
+                                    <span class="mini-label">Threats Blocked</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="mini-value">99.9%</span>
+                                    <span class="mini-label">Uptime</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-progress" style="width: 99%"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="mini-value">< 1ms</span>
+                                    <span class="mini-label">Response Time</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="mini-value">156</span>
+                                    <span class="mini-label">Active Rules</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="threat-feed">
+                                <div class="feed-header">
+                                    <span>Live Threat Feed</span>
+                                    <span class="live-indicator">
+                                        <span class="live-dot"></span>
+                                        LIVE
+                                    </span>
+                                </div>
+                                <div class="feed-items">
+                                    <div class="feed-item blocked">
+                                        <span class="feed-status">BLOCKED</span>
+                                        <span class="feed-type">SQL Injection Attempt</span>
+                                        <span class="feed-time">2s ago</span>
+                                    </div>
+                                    <div class="feed-item blocked">
+                                        <span class="feed-status">BLOCKED</span>
+                                        <span class="feed-type">Brute Force Attack</span>
+                                        <span class="feed-time">15s ago</span>
+                                    </div>
+                                    <div class="feed-item blocked">
+                                        <span class="feed-status">BLOCKED</span>
+                                        <span class="feed-type">Malware Download</span>
+                                        <span class="feed-time">1m ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the <span class="gradient-text">Security Experts</span></h2>
+                <p class="section-description">
+                    Our team brings decades of combined experience in cybersecurity, 
+                    from Fortune 500 companies to government agencies.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marcus Chen</h3>
+                        <span class="team-role">CEO & Founder</span>
+                        <p class="team-bio">Former NSA cybersecurity analyst with 15+ years in threat intelligence.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sarah Mitchell</h3>
+                        <span class="team-role">CTO</span>
+                        <p class="team-bio">PhD in Computer Science, pioneered AI-driven threat detection systems.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">David Rodriguez</h3>
+                        <span class="team-role">Head of Threat Intel</span>
+                        <p class="team-bio">Former FBI cyber division, expert in advanced persistent threats.</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="avatar-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Emily Watson</h3>
+                        <span class="team-role">Lead Security Engineer</span>
+                        <p class="team-bio">OSCP, CISSP certified. Built security infrastructure for Fortune 100.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Secure Your Business?</h2>
+                    <p>Get a free security assessment and discover how Hexert can protect your organization.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Start Free Assessment
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <span class="cta-note">No credit card required • Setup in 5 minutes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Discuss Your <span class="gradient-text">Security Needs</span></h2>
+                <p class="section-description">
+                    Whether you need a quick consultation or a comprehensive security overhaul, 
+                    we're here to help. Reach out today.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Headquarters</h4>
+                            <p>123 Security Boulevard<br>San Francisco, CA 94102</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>24/7 Emergency: +1 (555) 911-HACK</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@hexert.com<br>support@hexert.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="penetration-testing">Penetration Testing</option>
+                            <option value="mdr">Managed Detection & Response</option>
+                            <option value="consulting">Security Consulting</option>
+                            <option value="cloud-security">Cloud Security</option>
+                            <option value="incident-response">Incident Response</option>
+                            <option value="training">Security Training</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your security needs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">
+                        <span>Send Message</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 2L46 14V38L25 50L4 38V14L25 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M25 10L38 18V34L25 42L12 34V18L25 10Z" fill="currentColor" opacity="0.3"/>
+                            <path d="M25 18L31 22V30L25 34L19 30V22L25 18Z" fill="currentColor"/>
+                        </svg>
+                        <span>HEXERT</span>
+                    </a>
+                    <p class="footer-description">
+                        Protecting businesses worldwide with cutting-edge cybersecurity solutions. 
+                        Your security is our mission.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Penetration Testing</a></li>
+                            <li><a href="#services">Managed Detection</a></li>
+                            <li><a href="#services">Cloud Security</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Whitepapers</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hexert Cybersecurity. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">ISO 27001</span>
+                    <span class="badge">SOC 2</span>
+                    <span class="badge">GDPR</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
