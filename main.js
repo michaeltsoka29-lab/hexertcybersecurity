@@ -155,3 +155,86 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+// ================================
+// PRELOADER
+// ================================
+window.addEventListener("load", () => {
+  const loader = document.getElementById("preloader");
+  if (loader) loader.classList.add("hidden");
+});
+
+// ================================
+// NAVBAR SCROLL EFFECT
+// ================================
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".navbar");
+  if (!nav) return;
+  nav.classList.toggle("scrolled", window.scrollY > 20);
+});
+
+// ================================
+// MOBILE MENU TOGGLE
+// ================================
+const toggle = document.querySelector(".nav-toggle");
+const menu = document.querySelector(".nav-menu");
+
+if (toggle && menu) {
+  toggle.onclick = () => menu.classList.toggle("open");
+}
+
+// ================================
+// HERO STAT COUNTER ANIMATION
+// ================================
+document.querySelectorAll(".stat-number").forEach(el => {
+  let target = parseFloat(el.dataset.count);
+  let current = 0;
+  let speed = target / 80;
+
+  const interval = setInterval(() => {
+    current += speed;
+    if (current >= target) {
+      el.textContent = target;
+      clearInterval(interval);
+    } else {
+      el.textContent = current.toFixed(1);
+    }
+  }, 30);
+});
+
+// ================================
+// LIVE THREAT FEED (SAFE)
+// ================================
+const threatFeed = document.getElementById("threat-feed");
+
+if (threatFeed) {
+  const attacks = [
+    "Brute force attempt blocked",
+    "Firewall intercepted suspicious packet",
+    "Malware signature neutralized",
+    "Port scan detected and stopped",
+    "DDoS simulation mitigated",
+    "Unauthorized login attempt denied"
+  ];
+
+  setInterval(() => {
+    const msg = document.createElement("div");
+    msg.textContent = "🛡 " + attacks[Math.floor(Math.random() * attacks.length)];
+    threatFeed.prepend(msg);
+    if (threatFeed.children.length > 6) threatFeed.lastChild.remove();
+  }, 2000);
+}
+
+// ================================
+// DASHBOARD LIVE DATA
+// ================================
+if (document.getElementById("live-threats")) {
+  setInterval(() => {
+    document.getElementById("live-threats").textContent = Math.floor(Math.random() * 5);
+    document.getElementById("blocked-count").textContent = Math.floor(Math.random() * 120);
+    document.getElementById("system-health").textContent = (98 + Math.random()).toFixed(2) + "%";
+  }, 1200);
+}
+
